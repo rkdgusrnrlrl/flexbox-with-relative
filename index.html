@@ -2,10 +2,12 @@
     <head>
         <style>
 .parent {
-  background: blue;
-  display : flex;
-  flex-direction : column;
-  width: 200px;
+    background: blue;
+    display : flex;
+    flex-direction : column;
+    position: relative;
+    width: 200px;
+    height: 300px;
 }
 .child {
     border: black solid 1px;
@@ -15,19 +17,19 @@
     height : 190px;
 }
 .first {
-    position : relative;
+    position : absolute;
     z-index : 0;
     top : 0;
 }
 .second {
-    position : relative;
+    position : absolute;
     z-index : 1;
-    top : -180;
+    top : 10;
 }
 .third {
-    position : relative;
+    position : absolute;
     z-index : 2;
-    top : -360;
+    top : 20;
 }
 
         </style>
